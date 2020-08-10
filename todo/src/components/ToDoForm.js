@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export default function ToDoForm(props) {
     return (
         <div>
@@ -10,9 +9,9 @@ export default function ToDoForm(props) {
                 placeholder='Add an ToDo Item'
                 onChange={e => props.handleChange(e)}
                 value={props.input}/>
-                <button onSubmit={e => props.handleSubmit(e)}>Add Item</button>
+                <button className='additem' onSubmit={e => props.handleSubmit(e)}>Add Item</button>
             </form>
-            <button onClick={e => props.handleClear(e)}>Clear Items</button>
+            <button className='clearbutton' onClick={e => props.handleClear(e)}>Clear Items</button>
         </div>
     )
     
